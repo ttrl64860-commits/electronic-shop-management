@@ -37,8 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'electapp',
-    'rest_framework'
+    'rest_framework',
+    'accounts',
+    'products',
+    'suppliers',
+    'Customer',
+    'billing',
 ]
 
 MIDDLEWARE = [
@@ -76,7 +80,7 @@ WSGI_APPLICATION = 'electpro.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'esibm',
+        'NAME': 'store_main',
         'USER': 'root',
         'PASSWORD': '994038',
         'HOST': 'localhost',
@@ -120,4 +124,4 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-AUTH_USER_MODEL = 'electapp.User'
+AUTH_USER_MODEL = 'accounts.User'
